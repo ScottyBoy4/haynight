@@ -1,0 +1,6 @@
+K:\AS91896_McLeodScott\HayDayGUI\HayDayGUI\obj\Debug\HayDayGUI.csproj.AssemblyReference.cache
+K:\AS91896_McLeodScott\HayDayGUI\HayDayGUI\obj\Debug\HayDayGUI.csproj.SuggestedBindingRedirects.cache
+K:\AS91896_McLeodScott\HayDayGUI\HayDayGUI\obj\Debug\HayDayGUI.Form1.resources
+K:\AS91896_McLeodScott\HayDayGUI\HayDayGUI\obj\Debug\HayDayGUI.Properties.Resources.resources
+K:\AS91896_McLeodScott\HayDayGUI\HayDayGUI\obj\Debug\HayDayGUI.csproj.GenerateResource.cache
+K:\AS91896_McLeodScott\HayDayGUI\HayDayGUI\obj\Debug\HayDayGUI.csproj.CoreCompileInputs.cache

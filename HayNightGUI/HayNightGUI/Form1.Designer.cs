@@ -50,6 +50,20 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.car = new System.Windows.Forms.PictureBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.chicken1 = new System.Windows.Forms.PictureBox();
+            this.chicken2 = new System.Windows.Forms.PictureBox();
+            this.chicken5 = new System.Windows.Forms.PictureBox();
+            this.chicken7 = new System.Windows.Forms.PictureBox();
+            this.chicken6 = new System.Windows.Forms.PictureBox();
+            this.chicken3 = new System.Windows.Forms.PictureBox();
+            this.chicken4 = new System.Windows.Forms.PictureBox();
+            this.chicken8 = new System.Windows.Forms.PictureBox();
+            this.buttonLoad = new System.Windows.Forms.Button();
+            this.textBoxFarmName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.pictureBoxHide = new System.Windows.Forms.PictureBox();
+            this.buttonNew = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.road)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.path2)).BeginInit();
@@ -68,6 +82,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.car)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHide)).BeginInit();
             this.SuspendLayout();
             // 
             // background
@@ -124,7 +147,7 @@
             // house
             // 
             this.house.BackColor = System.Drawing.Color.Green;
-            this.house.Image = ((System.Drawing.Image)(resources.GetObject("house.Image")));
+            this.house.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("house.BackgroundImage")));
             this.house.Location = new System.Drawing.Point(498, 149);
             this.house.Name = "house";
             this.house.Size = new System.Drawing.Size(100, 69);
@@ -260,11 +283,159 @@
             this.timer2.Interval = 6;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // chicken1
+            // 
+            this.chicken1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.chicken1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chicken1.BackgroundImage")));
+            this.chicken1.Location = new System.Drawing.Point(648, 95);
+            this.chicken1.Name = "chicken1";
+            this.chicken1.Size = new System.Drawing.Size(12, 12);
+            this.chicken1.TabIndex = 18;
+            this.chicken1.TabStop = false;
+            // 
+            // chicken2
+            // 
+            this.chicken2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.chicken2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chicken2.BackgroundImage")));
+            this.chicken2.Location = new System.Drawing.Point(666, 104);
+            this.chicken2.Name = "chicken2";
+            this.chicken2.Size = new System.Drawing.Size(12, 12);
+            this.chicken2.TabIndex = 19;
+            this.chicken2.TabStop = false;
+            // 
+            // chicken5
+            // 
+            this.chicken5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.chicken5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chicken5.BackgroundImage")));
+            this.chicken5.Location = new System.Drawing.Point(648, 136);
+            this.chicken5.Name = "chicken5";
+            this.chicken5.Size = new System.Drawing.Size(12, 12);
+            this.chicken5.TabIndex = 20;
+            this.chicken5.TabStop = false;
+            // 
+            // chicken7
+            // 
+            this.chicken7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.chicken7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chicken7.BackgroundImage")));
+            this.chicken7.Location = new System.Drawing.Point(681, 162);
+            this.chicken7.Name = "chicken7";
+            this.chicken7.Size = new System.Drawing.Size(12, 12);
+            this.chicken7.TabIndex = 21;
+            this.chicken7.TabStop = false;
+            // 
+            // chicken6
+            // 
+            this.chicken6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.chicken6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chicken6.BackgroundImage")));
+            this.chicken6.Location = new System.Drawing.Point(706, 136);
+            this.chicken6.Name = "chicken6";
+            this.chicken6.Size = new System.Drawing.Size(12, 12);
+            this.chicken6.TabIndex = 22;
+            this.chicken6.TabStop = false;
+            // 
+            // chicken3
+            // 
+            this.chicken3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.chicken3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chicken3.BackgroundImage")));
+            this.chicken3.Location = new System.Drawing.Point(706, 104);
+            this.chicken3.Name = "chicken3";
+            this.chicken3.Size = new System.Drawing.Size(12, 12);
+            this.chicken3.TabIndex = 23;
+            this.chicken3.TabStop = false;
+            // 
+            // chicken4
+            // 
+            this.chicken4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.chicken4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chicken4.BackgroundImage")));
+            this.chicken4.Location = new System.Drawing.Point(681, 122);
+            this.chicken4.Name = "chicken4";
+            this.chicken4.Size = new System.Drawing.Size(12, 12);
+            this.chicken4.TabIndex = 24;
+            this.chicken4.TabStop = false;
+            // 
+            // chicken8
+            // 
+            this.chicken8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.chicken8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chicken8.BackgroundImage")));
+            this.chicken8.Location = new System.Drawing.Point(663, 174);
+            this.chicken8.Name = "chicken8";
+            this.chicken8.Size = new System.Drawing.Size(12, 12);
+            this.chicken8.TabIndex = 25;
+            this.chicken8.TabStop = false;
+            // 
+            // buttonLoad
+            // 
+            this.buttonLoad.Location = new System.Drawing.Point(179, 7);
+            this.buttonLoad.Name = "buttonLoad";
+            this.buttonLoad.Size = new System.Drawing.Size(75, 23);
+            this.buttonLoad.TabIndex = 26;
+            this.buttonLoad.Text = "Load";
+            this.buttonLoad.UseVisualStyleBackColor = true;
+            this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
+            // 
+            // textBoxFarmName
+            // 
+            this.textBoxFarmName.Location = new System.Drawing.Point(73, 10);
+            this.textBoxFarmName.Name = "textBoxFarmName";
+            this.textBoxFarmName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFarmName.TabIndex = 27;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Farm Name:";
+            // 
+            // buttonSave
+            // 
+            this.buttonSave.Location = new System.Drawing.Point(713, 7);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(75, 23);
+            this.buttonSave.TabIndex = 29;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
+            // pictureBoxHide
+            // 
+            this.pictureBoxHide.Location = new System.Drawing.Point(1000, -4);
+            this.pictureBoxHide.Name = "pictureBoxHide";
+            this.pictureBoxHide.Size = new System.Drawing.Size(877, 453);
+            this.pictureBoxHide.TabIndex = 30;
+            this.pictureBoxHide.TabStop = false;
+            // 
+            // buttonNew
+            // 
+            this.buttonNew.Location = new System.Drawing.Point(260, 7);
+            this.buttonNew.Name = "buttonNew";
+            this.buttonNew.Size = new System.Drawing.Size(75, 23);
+            this.buttonNew.TabIndex = 31;
+            this.buttonNew.Text = "Create New";
+            this.buttonNew.UseVisualStyleBackColor = true;
+            this.buttonNew.Click += new System.EventHandler(this.buttonNew_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonNew);
+            this.Controls.Add(this.buttonLoad);
+            this.Controls.Add(this.textBoxFarmName);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBoxHide);
+            this.Controls.Add(this.buttonSave);
+            this.Controls.Add(this.chicken8);
+            this.Controls.Add(this.chicken4);
+            this.Controls.Add(this.chicken3);
+            this.Controls.Add(this.chicken6);
+            this.Controls.Add(this.chicken7);
+            this.Controls.Add(this.chicken5);
+            this.Controls.Add(this.chicken2);
+            this.Controls.Add(this.chicken1);
             this.Controls.Add(this.car);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -304,7 +475,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.car)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHide)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -330,6 +511,20 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox car;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.PictureBox chicken1;
+        private System.Windows.Forms.PictureBox chicken2;
+        private System.Windows.Forms.PictureBox chicken5;
+        private System.Windows.Forms.PictureBox chicken7;
+        private System.Windows.Forms.PictureBox chicken6;
+        private System.Windows.Forms.PictureBox chicken3;
+        private System.Windows.Forms.PictureBox chicken4;
+        private System.Windows.Forms.PictureBox chicken8;
+        private System.Windows.Forms.Button buttonLoad;
+        private System.Windows.Forms.TextBox textBoxFarmName;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.PictureBox pictureBoxHide;
+        private System.Windows.Forms.Button buttonNew;
     }
 }
 

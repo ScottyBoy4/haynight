@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace HayNightGUI
 {
@@ -20,22 +21,7 @@ namespace HayNightGUI
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            //Vars
-            int x = 0;
-            int y = 0;
-            Graphics paper = background.CreateGraphics();
-            Pen pen = new Pen(Color.Black, 2);
-            Brush brush = new SolidBrush(Color.DarkGreen);
-
-            //Clear Picturebox
-            background.Refresh();
-
-            //Draw a square
-            paper.FillRectangle(brush, x, y, x+798, y+448);
-            brush = new SolidBrush(Color.SandyBrown);
-            paper.FillRectangle(brush, x+(background.Width/2)-75, y, x + 100, y + 375);
-            brush = new SolidBrush(Color.Gray);
-            paper.FillRectangle(brush, x, (background.Width / 2) - 75, x + 798, y + 150);
+           
         }
         int i = 0;
 
@@ -67,7 +53,10 @@ namespace HayNightGUI
         {
             timer1.Start();
             timer2.Start();
-            
+
+            pictureBoxHide.Left = 0;
+
+
         }
 
         private void truck_Click(object sender, EventArgs e)
@@ -92,6 +81,120 @@ namespace HayNightGUI
             if (car.Left < -100)
             {
                 car.Left = rand.Next(1000,1500);
+            }
+        }
+        string crops1File = "cropDirt";
+        string crops2File = "cropDirt";
+        string crops3File = "cropDirt";
+        string crops4File = "cropDirt";
+
+        private void buttonLoad_Click(object sender, EventArgs e)
+        {
+            string farmName = textBoxFarmName.Text;
+
+            
+            try
+            {
+
+                StreamReader streamReader = new StreamReader($"{farmName}.txt");
+
+                crops1File = streamReader.ReadLine();
+                crops2File = streamReader.ReadLine();
+                crops3File = streamReader.ReadLine();
+                crops4File = streamReader.ReadLine();
+
+
+
+
+
+                var bmp = new Bitmap($"{crops1File}.png");
+                crops1.BackgroundImage = bmp;
+
+                bmp = new Bitmap($"{crops2File}.png");
+                crops2.BackgroundImage = bmp;
+
+                bmp = new Bitmap($"{crops3File}.png");
+                crops3.BackgroundImage = bmp;
+
+                bmp = new Bitmap($"{crops4File}.png");
+                crops4.BackgroundImage = bmp;
+
+
+                pictureBoxHide.Left = 1000;
+                buttonLoad.Left = 1000;
+                textBoxFarmName.Left = 600;
+                label1.Left = 1000;
+                buttonNew.Left = 1000;
+            }
+            catch
+            {
+                MessageBox.Show("Farm does not exist");
+            }
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            string farmName = textBoxFarmName.Text;
+            
+            StreamWriter streamWriter = new StreamWriter($"{farmName}.txt");
+
+            crops1File = "cropMelons2";
+
+            streamWriter.WriteLine(crops1File);
+            streamWriter.WriteLine(crops2File);
+            streamWriter.WriteLine(crops3File);
+            streamWriter.WriteLine(crops4File);
+            streamWriter.Close();
+
+            MessageBox.Show($"Farm Saved as \"{farmName}\"");
+        }
+
+        private void buttonNew_Click(object sender, EventArgs e)
+        {
+            string farmName = textBoxFarmName.Text;
+
+
+            try
+            {
+
+                StreamReader streamReader = new StreamReader($"default.txt");
+
+                crops1File = streamReader.ReadLine();
+                crops2File = streamReader.ReadLine();
+                crops3File = streamReader.ReadLine();
+                crops4File = streamReader.ReadLine();
+
+
+
+
+
+                var bmp = new Bitmap($"{crops1File}.png");
+                crops1.BackgroundImage = bmp;
+
+                bmp = new Bitmap($"{crops2File}.png");
+                crops2.BackgroundImage = bmp;
+
+                bmp = new Bitmap($"{crops3File}.png");
+                crops3.BackgroundImage = bmp;
+
+                bmp = new Bitmap($"{crops4File}.png");
+                crops4.BackgroundImage = bmp;
+
+
+                pictureBoxHide.Left = 1000;
+                buttonLoad.Left = 1000;
+                textBoxFarmName.Left = 600;
+                label1.Left = 1000;
+                buttonNew.Left = 1000;
+
+
+                buttonSave_Click(sender, e);
+
+
+            }
+            catch
+            {
+                MessageBox.Show("Error Creating New Farm");
             }
         }
     }

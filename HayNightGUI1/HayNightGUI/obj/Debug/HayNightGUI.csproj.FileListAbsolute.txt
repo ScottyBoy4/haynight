@@ -1,0 +1,11 @@
+K:\HayNightGUI\HayNightGUI\bin\Debug\HayNightGUI.exe.config
+K:\HayNightGUI\HayNightGUI\bin\Debug\HayNightGUI.exe
+K:\HayNightGUI\HayNightGUI\bin\Debug\HayNightGUI.pdb
+K:\HayNightGUI\HayNightGUI\obj\Debug\HayNightGUI.csproj.AssemblyReference.cache
+K:\HayNightGUI\HayNightGUI\obj\Debug\HayNightGUI.csproj.SuggestedBindingRedirects.cache
+K:\HayNightGUI\HayNightGUI\obj\Debug\HayNightGUI.Form1.resources
+K:\HayNightGUI\HayNightGUI\obj\Debug\HayNightGUI.Properties.Resources.resources
+K:\HayNightGUI\HayNightGUI\obj\Debug\HayNightGUI.csproj.GenerateResource.cache
+K:\HayNightGUI\HayNightGUI\obj\Debug\HayNightGUI.csproj.CoreCompileInputs.cache
+K:\HayNightGUI\HayNightGUI\obj\Debug\HayNightGUI.exe
+K:\HayNightGUI\HayNightGUI\obj\Debug\HayNightGUI.pdb
